@@ -1,0 +1,20 @@
+/*Подключаем шрифт из вне...*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/***************************/
+
+body {
+  background-color: #f1f1f1;
+  color: #0f141e;
+  font-size: 16px; /*шрифт-размер*/
+  font-weight: normal; /*шрифт-жирность*/
+  /*font-family: Cambria, Georgia, Times, "Times New Roman", serif; /*шрифты по очереди в зависимости наличае их в браузере*/
+  font-family: "Roboto", sans-serif;
+  /*Можно в 1 строку font: normal 16rx 'Roboto' sans-serif;,*/
+}
+
+/* | class = . | id = # | */
+.avatar {
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: -10px -10px 15px;
+}
