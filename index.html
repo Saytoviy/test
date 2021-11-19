@@ -1,94 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Ucheba</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <table>
-      <tr>
-        <td>
-          <img src="avatar.jpg" alt="аватарка" class="avatar" />
-        </td>
-        <td>
-          <h1>Hi, это моя первая страничка!</h1>
-          <p>Решил изучить <strong>HTML</strong> и в целом web-разработку.</p>
-        </td>
-      </tr>
-    </table>
-    <hr width="" />
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ucheba</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="conteyner">
+    <div class="info">
+      <div class="ava"><img src="avatar.jpg" alt="аватарка" class="avatar" /></div>
+      <div class="privet">
+        <h1>Hi, это моя первая страничка!</h1>
+        <p>Решил изучить <strong>HTML</strong> и в целом web-разработку.</p>
+      </div>
+    </div>
 
     <!--СПИСОК МАТЕРИАЛОВ-->
-    <ul>
-      <strong><em>СПИСОК МАТЕРИАЛОВ КОТОРЫЕ ХОЧУ ИЗУЧИТЬ</em></strong>
-      <p>*постепенно список будет редактироваться</p>
-      <li>
-        <em
-          ><a href="https://www.youtube.com/watch?v=DOEtVdkKwcU" target="_blank"
-            >Урок по HTML от Владлена Минина</a
-          ></em
-        >
-      </li>
-      <li>
-        <em
-          ><a
-            href="https://www.youtube.com/watch?v=SpCUuyZZTp8&feature=youtu.be"
-            target="_blank"
-            >Урок по CSS от Владлена Минина</a
-          ></em
-        >
-      </li>
-      <li>
-        <em
-          ><a href="https://youtu.be/Bluxbh9CaQ0" target="_blank"
-            >JavaScript для начинающих от Владлена Минина
-          </a></em
-        >
-      </li>
-    </ul>
-    <hr width="" />
+    <div class="materials">
+      <h4>СПИСОК МАТЕРИАЛОВ КОТОРЫЕ ХОЧУ ИЗУЧИТЬ</h4>
+      <p class="comment">*постепенно список будет редактироваться</p>
+      <a href="https://www.youtube.com/watch?v=DOEtVdkKwcU" target="_blank">
+        Урок по HTML от Владлена Минина</a> </br>
+      <a href="https://www.youtube.com/watch?v=SpCUuyZZTp8&feature=youtu.be" target="_blank">
+        Урок по CSS от Владлена Минина</a></br>
+      <a href="https://youtu.be/Bluxbh9CaQ0" target="_blank">
+        JavaScript для начинающих от Владлена Минина</a>
+    </div>
+
 
     <!--О СЕБЕ-->
-    <ol>
-      <strong><em>НЕМНОГО О СЕБЕ</em></strong>
-      <li>
-        Начинающий программист*<br /><em>надеюсь что меня можно так назвать</em>
-        :)
-      </li>
-      <li>
-        Парень, 37 годиков (да старенький, но знания никогда не бывают лишними)
-      </li>
-      <li>
-        Пока всё, в будущем может что-нибудь допишу сюда ещё, ведь это только
-        начало! :)
-      </li>
-    </ol>
-    <hr width="" />
+    <div class="materials">
+      <h4><strong>НЕМНОГО О СЕБЕ</strong></h4>
+      <ol>
+        <li>
+          Начинающий программист<br />
+          <p class="comment">*надеюсь что меня можно так назвать :)</p>
+
+        </li>
+        <li>
+          Парень, 37 годиков (да старенький, но знания никогда не бывают лишними)
+        </li>
+        <li>
+          Пока всё, в будущем может что-нибудь допишу сюда ещё, ведь это только
+          начало! :)
+        </li>
+      </ol>
+    </div>
+
 
     <!--ФОРМА-->
-    <p>
-      *форма связи в стадии разработке (верней в стадии изучения 'form action')
-    </p>
-    <h2>Связь</h2>
+    <div class="materials">
+      <h4>СВЯЗАТЬСЯ СО МНОЙ</h2>
+        <p class="comment">
+          *форма связи в стадии разработке (верней в стадии изучения 'form action')
+        </p>
 
-    <form action="">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите ваше имя" />
-      <br />
-      <label for="e-mail">Ваш e-mail:</label>
-      <input type="text" id="e-mail" placeholder="Введите ваш e-mail" />
-      <br />
-      <label for="text">Ваше сообщение:</label>
-      <textarea
-        name="text"
-        id="text"
-        cols="30"
-        rows="5"
-        placeholder="Тут пишите свое сообщение мне ;)"
-      ></textarea>
-      <br />
-      <input type="submit" value="Связаться" />
-    </form>
-  </body>
+        <div class="contact">
+
+          <form action="">
+
+            <div class="contact-from">
+              <div class="form-from">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" placeholder="Введите ваше имя" />
+              </div>
+
+              <div class="form-from">
+                <label for="e-mail">Ваш e-mail:</label>
+                <input type="text" id="e-mail" placeholder="Введите ваш e-mail" />
+              </div>
+            </div>
+
+            <div class="form-from">
+              <label for="text">Ваше сообщение:</label>
+              <textarea name="text" id="text" cols="30" rows="5"
+                placeholder="Тут пишите свое сообщение мне ;)"></textarea>
+            </div>
+            <input class="btn" type="submit" value="Связаться" />
+
+          </form>
+        </div>
+    </div>
+  </div>
+</body>
+
 </html>

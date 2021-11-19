@@ -11,10 +11,95 @@ body {
   font-family: "Roboto", sans-serif;
   /*Можно в 1 строку font: normal 16rx 'Roboto' sans-serif;,*/
 }
+.co h4 {
+  margin: auto;
+}
+ol {
+  padding-left: 20px;
+}
 
-/* | class = . | id = # | */
+a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: blue;
+}
+
+/*a:visited {
+  color: red;
+}*/
+
+.comment {
+  font-style: italic;
+  font-size: 12px;
+  margin-top: auto;
+}
 .avatar {
   width: 150px;
   border-radius: 10px;
-  box-shadow: -10px -10px 15px;
+  box-shadow: 10px -10px 15px;
+  margin-right: 50px;
+}
+.info {
+  display: flex;
+}
+.info p {
+  color: rgb(41, 67, 68);
+  margin: 0%;
+}
+
+.conteyner {
+  max-width: 750px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.materials {
+  background-color: rgb(242, 242, 253);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.form-from label {
+  display: block;
+}
+
+.form-from input,
+.form-from textarea {
+  padding: 10px 0px;
+  width: 100%;
+  background: transparent;
+  /*box-sizing: border-box;*/
+  border: none;
+  border-bottom: 1px solid #516897;
+  outline: none;
+}
+
+.contact-from {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contact-from > .form-from {
+  width: 50%;
+}
+
+.contact-from > .form-from:first-child {
+  margin-right: 20px;
+}
+
+.btn {
+  background: #0f141e;
+  color: #999;
+  padding: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.9;
 }
